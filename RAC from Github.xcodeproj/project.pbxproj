@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1B8E9377239338CA0023CAEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8E9375239338CA0023CAEC /* Main.storyboard */; };
 		1B8E9379239338CE0023CAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8E9378239338CE0023CAEC /* Assets.xcassets */; };
 		1B8E937C239338CE0023CAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8E937A239338CE0023CAEC /* LaunchScreen.storyboard */; };
+		1B8E938423933FC20023CAEC /* DataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E938323933FC20023CAEC /* DataValidator.swift */; };
+		8993B04853DADE483A2D5D9A /* Pods_RAC_from_Github.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC4F0E115665E66B31D50B0 /* Pods_RAC_from_Github.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		1B8E9378239338CE0023CAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8E937B239338CE0023CAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8E937D239338CE0023CAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8E938323933FC20023CAEC /* DataValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataValidator.swift; sourceTree = "<group>"; };
+		9DC4F0E115665E66B31D50B0 /* Pods_RAC_from_Github.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_from_Github.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4E536B78E0891ABE3B5C82 /* Pods-RAC from Github.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC from Github.debug.xcconfig"; path = "Target Support Files/Pods-RAC from Github/Pods-RAC from Github.debug.xcconfig"; sourceTree = "<group>"; };
+		BFBF7D98E9F65889681F7C01 /* Pods-RAC from Github.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC from Github.release.xcconfig"; path = "Target Support Files/Pods-RAC from Github/Pods-RAC from Github.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8993B04853DADE483A2D5D9A /* Pods_RAC_from_Github.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				1B8E936E239338CA0023CAEC /* RAC from Github */,
 				1B8E936D239338CA0023CAEC /* Products */,
+				AFCA6553FB08A8D662A2802F /* Pods */,
+				4EA51297FC72CE4CC709D9C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				1B8E9378239338CE0023CAEC /* Assets.xcassets */,
 				1B8E937A239338CE0023CAEC /* LaunchScreen.storyboard */,
 				1B8E937D239338CE0023CAEC /* Info.plist */,
+				1B8E938323933FC20023CAEC /* DataValidator.swift */,
 			);
 			path = "RAC from Github";
+			sourceTree = "<group>";
+		};
+		4EA51297FC72CE4CC709D9C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DC4F0E115665E66B31D50B0 /* Pods_RAC_from_Github.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFCA6553FB08A8D662A2802F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB4E536B78E0891ABE3B5C82 /* Pods-RAC from Github.debug.xcconfig */,
+				BFBF7D98E9F65889681F7C01 /* Pods-RAC from Github.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B8E9380239338CE0023CAEC /* Build configuration list for PBXNativeTarget "RAC from Github" */;
 			buildPhases = (
+				512ABD108E266B8545E931D6 /* [CP] Check Pods Manifest.lock */,
 				1B8E9368239338CA0023CAEC /* Sources */,
 				1B8E9369239338CA0023CAEC /* Frameworks */,
 				1B8E936A239338CA0023CAEC /* Resources */,
+				EEED27384B56FC59B855BE6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		512ABD108E266B8545E931D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RAC from Github-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEED27384B56FC59B855BE6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RAC from Github/Pods-RAC from Github-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RAC from Github/Pods-RAC from Github-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RAC from Github/Pods-RAC from Github-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B8E9368239338CA0023CAEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				1B8E9374239338CA0023CAEC /* ViewController.swift in Sources */,
 				1B8E9370239338CA0023CAEC /* AppDelegate.swift in Sources */,
+				1B8E938423933FC20023CAEC /* DataValidator.swift in Sources */,
 				1B8E9372239338CA0023CAEC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +354,7 @@
 		};
 		1B8E9381239338CE0023CAEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB4E536B78E0891ABE3B5C82 /* Pods-RAC from Github.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		1B8E9382239338CE0023CAEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBF7D98E9F65889681F7C01 /* Pods-RAC from Github.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
